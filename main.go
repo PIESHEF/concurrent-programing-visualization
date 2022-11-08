@@ -6,12 +6,12 @@ import (
 )
 
 func main() {
-	getCPU()
+	get_CPU_Cores()
 	getThreads()
 }
 
-func getCPU() {
-	fmt.Println("Total Number of CPUs = ", runtime.NumCPU())
+func get_CPU_Cores() {
+	fmt.Println("Total Number of CPU Cores = ", runtime.NumCPU())
 }
 
 func getThreads() {
