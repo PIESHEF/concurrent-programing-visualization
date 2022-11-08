@@ -1,13 +1,13 @@
 BINARY_NAME=hello-world
 
 build:
-	GOARCH=amd64 GOOS=linux go build -o ${BINARY_NAME} main.go
+	GOARCH=amd64 GOOS=linux go build -o bin/${BINARY_NAME} src/main.go
 
 run:
-	./${BINARY_NAME}
+	./bin/${BINARY_NAME}
 
 build_and_run: build run
 
 clean:
 	go clean
-	rm ${BINARY_NAME}
+	rm -r bin

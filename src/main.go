@@ -11,7 +11,7 @@ func main() {
 }
 
 func get_CPU_Cores() {
-	fmt.Println("Total Number of CPU Cores = ", runtime.NumCPU())
+	fmt.Println("Total Number of CPU Cores =", runtime.NumCPU())
 }
 
 func getThreads() {
